@@ -26,7 +26,7 @@ public class BatteryLevelCheck extends AsyncTask<Context, Void, Void> {
                 new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
         int level = batteryIntent.getIntExtra("level", -1);
 
-        if(level == 96){
+        if(level == 100){
             mMediaPlayer.setLooping(true);
             mMediaPlayer.start();
         }
